@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavigateButtons = () => {
   return (
-    <div className='py-8 px-16'>
+    <div className='bg-[#F6F6F6] px-8 py-8 md:px-16'>
         <div className="flex flex-wrap gap-2">
           <div className="text-[#F9F9F9] font-medium border-[1px] border-[#1656A5] bg-[#1656A5] rounded-xl px-5 py-3 text-sm">
             Why choose us

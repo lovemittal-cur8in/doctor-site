@@ -144,7 +144,7 @@ const Footer = () => {
           {/* Social Links and Copyright */}
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
             {/* Copyright */}
-            <div className="text-gray-400 text-sm order-2 lg:order-1">
+            <div className="text-gray-400 text-center md:text-left text-sm mt-6 md:mt-0 order-2 lg:order-1">
               © 2025 All Rights Reserved. Progenesis Fertility Center
             </div>
 
