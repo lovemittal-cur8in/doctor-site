@@ -73,7 +73,7 @@ const OurApproach = () => {
             <div
               key={idx}
               onClick={() => setActiveIndex(idx)}
-              className={`cursor-pointer pt-2 md:pt-0 pb-2 text-lg md:text-2xl text-center px-0 md:px-8 lg:px-32 leading-[28px] md:leading-[40px] tracking-[-0.02em] ${
+              className={`cursor-pointer pt-2 md:pt-0 pb-2 text-lg  text-center px-0 md:px-8 lg:px-32 leading-[28px] md:leading-[40px] tracking-[-0.02em] ${
                 activeIndex === idx
                   ? "border-b-[1px] border-[#1656A5] text-[#1656A5]"
                   : "border-b-[1px] border-[#C4C4C4] text-[#606060]"
