@@ -31,7 +31,6 @@ const OurStory = () => {
 
   return (
     <div className="bg-white h-fit flex flex-col lg:flex-row justify-between p-6 lg:p-20 gap-10">
-      {/* Left Section */}
       <div className="flex flex-col gap-10 w-full lg:w-[432px]">
         <div className="flex flex-col gap-2">
           <div className="bg-[#1656A5]/5 w-fit rounded-full font-medium text-xs px-2 py-1 text-[#1656A5] leading-[20px] tracking-[-0.02em]">
@@ -42,7 +41,6 @@ const OurStory = () => {
           </div>
         </div>
 
-        {/* Clickable Options */}
         <div className="text-[#2c2c2c]/50 text-base leading-[24px] tracking-[-0.02em] flex flex-col gap-2">
           {options.map((opt, idx) => (
             <div key={idx}>
@@ -70,7 +68,6 @@ const OurStory = () => {
         </div>
       </div>
 
-      {/* Right Section */}
       <div className="flex flex-col gap-7 w-full lg:w-1/2">
         <div className="text-lg text-[#2C2C2C] leading-[30px] tracking-[-0.02em]">
           We believe every hopeful parent deserves a team that listens, cares,

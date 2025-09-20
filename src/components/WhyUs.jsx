@@ -30,18 +30,16 @@ const WhyUs = () => {
     },
   ]
 
-  // Auto-slide loop
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % options.length)
-    }, 4000) // 4 sec each
+    }, 4000)
 
     return () => clearInterval(interval)
   }, [])
 
   return (
     <div className="bg-[#1656A5]/5 h-fit flex flex-col lg:flex-row justify-between p-6 lg:p-20 gap-10">
-      {/* Left Section */}
       <div className="flex flex-col gap-14 w-full lg:w-[432px]">
         <div className="flex flex-col gap-2">
           <div className="bg-[#1656A5]/5 w-fit rounded-full font-medium text-xs px-2 py-1 text-[#1656A5]">
@@ -52,7 +50,6 @@ const WhyUs = () => {
           </div>
         </div>
 
-        {/* Options */}
         <div className="flex flex-col gap-6">
           {options.map((opt, idx) => (
             <div
@@ -60,7 +57,6 @@ const WhyUs = () => {
               className="cursor-pointer"
               onClick={() => setActiveIndex(idx)}
             >
-              {/* Progress Bar */}
               <div className="relative h-[2px] bg-[#A5A5A5] mb-3 overflow-hidden rounded">
                 {activeIndex === idx && (
                   <div
@@ -72,7 +68,6 @@ const WhyUs = () => {
                 )}
               </div>
 
-              {/* Text + Number */}
               <div className="flex justify-between gap-10">
                 <div className="flex flex-col">
                   <div
@@ -101,7 +96,6 @@ const WhyUs = () => {
         </div>
       </div>
 
-      {/* Right Section */}
       <div className="w-full lg:w-2/3 relative">
         <div className="relative w-full h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
           {options.map((opt, idx) => (
@@ -117,7 +111,6 @@ const WhyUs = () => {
         </div>
       </div>
 
-      {/* Progress bar animation keyframes */}
       <style>
         {`
           @keyframes progressBar {

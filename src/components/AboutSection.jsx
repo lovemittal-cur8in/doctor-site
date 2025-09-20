@@ -13,8 +13,6 @@ const AboutSection = () => {
           alt="circle1"
           className="absolute bottom-0 right-0  h-1/2 md:h-full z-5"
         />
-
-        {/* Bottom Left Circle */}
         <img
           src="/heart1.png"
           alt="person"

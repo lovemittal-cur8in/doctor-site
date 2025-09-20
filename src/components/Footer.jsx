@@ -91,22 +91,16 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 overflow-hidden">
-      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src="/footer.png"
           alt="Baby with giraffe toy"
           className="w-full h-full object-cover opacity-90"
         />
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/20"></div>
       </div>
-
-      {/* Content */}
       <div className="relative z-10">
-        {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          {/* Footer Links Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
             {footerSections.map((section, index) => (
               <div key={index} className="space-y-4">
@@ -132,7 +126,6 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Mission Statement */}
           <div className="border-t border-white/20 pt-8 mb-8">
             <div className="max-w-2xl">
               <h2 className="text-2xl lg:text-3xl font-bold text-white leading-relaxed mb-4">
@@ -141,14 +134,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Links and Copyright */}
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
-            {/* Copyright */}
             <div className="text-gray-400 text-center md:text-left text-sm mt-6 md:mt-0 order-2 lg:order-1">
               © 2025 All Rights Reserved. Progenesis Fertility Center
             </div>
 
-            {/* Social Media Icons */}
             <div className="flex items-center space-x-1 order-1 lg:order-2">
               {socialLinks.map((social, index) => (
                 <React.Fragment key={social.name}>
@@ -170,13 +160,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Mobile Responsive Adjustments */}
         <div className="lg:hidden">
-          {/* Mobile-specific footer adjustments if needed */}
         </div>
       </div>
-
-      {/* Decorative Elements */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 opacity-60"></div>
     </footer>
   );

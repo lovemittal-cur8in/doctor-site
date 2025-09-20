@@ -4,7 +4,6 @@ const OurVision = () => {
   return (
     <div className="bg-white h-fit flex flex-col p-6 lg:p-20 gap-10">
       <div className="flex flex-col gap-20 w-full">
-        {/* Heading */}
         <div className="flex flex-col gap-2 max-w-[532px]">
           <div className="bg-[#1656A5]/5 w-fit rounded-full font-medium text-xs px-2 py-1 text-[#1656A5] leading-[20px] tracking-[-0.02em]">
             Our Vision & Mission
@@ -14,9 +13,7 @@ const OurVision = () => {
           </div>
         </div>
 
-        {/* Sections */}
         <div className="flex flex-col gap-10">
-          {/* Vision */}
           <div className="border-t border-black/15 flex flex-col lg:flex-row gap-6 pt-2 justify-between">
             <div className="text-3xl text-[#2C2C2C] lg:text-5xl leading-[40px] lg:leading-[56px] tracking-[-0.02em] shrink-0">
               Our Vision
@@ -30,7 +27,6 @@ const OurVision = () => {
             </div>
           </div>
 
-          {/* Mission */}
           <div className="border-t border-black/15 flex flex-col lg:flex-row gap-6 pt-2 justify-between">
             <div className="text-3xl text-[#2C2C2C] lg:text-5xl leading-[40px] lg:leading-[56px] tracking-[-0.02em] shrink-0">
               Our Mission

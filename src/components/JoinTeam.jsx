@@ -3,21 +3,19 @@ import React from 'react'
 const JoinTeam = () => {
   return (
     <div className="relative pt-10 md:pt-0 bg-white w-full h-fit flex flex-col lg:flex-row px-6 lg:px-20 gap-10 lg:gap-20 items-center overflow-hidden">
-      {/* Top Right Circle */}
+
       <img
         src="/about-circle1.png"
         alt="circle1"
         className="absolute top-0 right-0  h-full z-0"
       />
 
-      {/* Bottom Left Circle */}
       <img
         src="/about-circle2.png"
         alt="circle2"
         className="absolute bottom-0 left-0  h-full z-0"
       />
 
-      {/* Content layer */}
       <div className="relative z-10 flex flex-col lg:flex-row justify-between w-full items-center gap-10 lg:gap-20">
         <div className="w-full lg:max-w-[800px] flex flex-col gap-6 lg:gap-12 text-center lg:text-left">
           <div className="text-[#94BA3D] text-2xl md:text-3xl lg:text-5xl leading-snug lg:leading-[56px] tracking-[-0.02em]">

@@ -56,7 +56,6 @@ const OurApproach = () => {
 
   return (
     <div className="bg-[#FAFAFA] h-fit flex flex-col p-6 lg:p-20 gap-10">
-      {/* Left Section */}
       <div className="flex flex-col gap-10 w-full">
         <div className="flex flex-col gap-2 max-w-[632px]">
           <div className="bg-[#1656A5]/5 w-fit rounded-full font-medium text-xs px-2 py-1 text-[#1656A5] leading-[20px] tracking-[-0.02em]">
@@ -67,7 +66,6 @@ const OurApproach = () => {
           </div>
         </div>
 
-        {/* Tabs */}
         <div className="flex flex-col w-full md:flex-row justify-between">
           {slides.map((slide, idx) => (
             <div
@@ -84,7 +82,6 @@ const OurApproach = () => {
           ))}
         </div>
 
-        {/* Carousel */}
           <div className="relative flex justify-center w-full mt-5">
             <div className="relative w-full max-w-full h-fit min-h-[400px] md:min-h-[500px] lg:min-h-[530px] rounded-2xl overflow-hidden">
               <AnimatePresence mode="wait">
@@ -96,16 +93,14 @@ const OurApproach = () => {
                   transition={{ duration: 0.5 }}
                   className="relative w-full h-full"
                 >
-                  {/* Background */}
                   <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url(${slides[activeIndex].bg})` }}
                   />
                   <div className="absolute inset-0 bg-black/40" />
 
-                  {/* Content */}
                   <div className="relative z-10 flex flex-col gap-20 md:gap-32 p-6 md:p-10 lg:p-14 h-fit text-white">
-                    {/* Heading + Buttons */}
+                   
                     <div className="flex flex-col gap-4">
                       <div className="text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-snug lg:leading-[56px] tracking-[-0.02em]">
                         {slides[activeIndex].heading}
@@ -120,7 +115,6 @@ const OurApproach = () => {
                       </div>
                     </div>
 
-                    {/* Cards */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 w-full">
                       {slides[activeIndex].boxes.map((box, i) => (
                         <div
@@ -145,8 +139,6 @@ const OurApproach = () => {
             </div>
           </div>
 
-
-        {/* Arrow Navigation */}
         <div className="flex gap-4 mx-auto mt-5">
           <button
             onClick={handlePrev}

@@ -3,7 +3,6 @@ import React from "react"
 const ChooseUs = () => {
   return (
     <div className="w-full bg-[#F5FAFF] h-fit flex flex-col p-6 lg:p-20 gap-10">
-      {/* Heading */}
       <div className="flex flex-col gap-2 max-w-[740px]">
         <div className="bg-[#1656A5]/5 w-fit rounded-full font-medium text-xs px-2 py-1 text-[#1656A5] leading-[20px] tracking-[-0.02em]">
           Impact & Growth
@@ -13,8 +12,6 @@ const ChooseUs = () => {
           future together.
         </div>
       </div>
-
-      {/* Boxes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         <div className="bg-[#EEF5FF] flex flex-col items-start rounded-2xl px-5 py-8 min-h-[260px] gap-6">
           <img src="/chart_data.svg" className="w-14 h-14" alt="" />

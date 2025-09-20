@@ -38,14 +38,14 @@ const DropdownMenu = ({ title, mobile }) => {
         mobile ? "flex-col w-full h-auto" : ""
       }`}
       style={{
-        width: mobile ? "100%" : "1200px", // adjusted width
-        height: mobile ? "auto" : "350px", // adjusted height
+        width: mobile ? "100%" : "1200px", 
+        height: mobile ? "auto" : "350px", 
         top: mobile ? "0" : "104px",
         left: mobile ? "0" : "153px",
         borderTop: "1px solid #e5e7eb",
       }}
     >
-      {/* Section 1 - Left Image */}
+      
       {!mobile && (
         <div className="w-1/4 flex-shrink-0 flex items-center justify-center">
           <img
@@ -55,8 +55,6 @@ const DropdownMenu = ({ title, mobile }) => {
           />
         </div>
       )}
-
-      {/* Section 2 - Discover Us */}
       <div className="flex-1 px-8">
         <h3 className="font-semibold text-lg text-gray-900 mb-4">Discover Us</h3>
         <ul className="space-y-3">
@@ -71,7 +69,6 @@ const DropdownMenu = ({ title, mobile }) => {
         </ul>
       </div>
 
-      {/* Section 3 - Quick Links */}
       <div className="flex-1 px-8">
         <h3 className="font-semibold text-lg text-gray-900 mb-4">Quick Links</h3>
         <ul className="space-y-3">
@@ -93,7 +90,6 @@ const DropdownMenu = ({ title, mobile }) => {
         </ul>
       </div>
 
-      {/* Section 4 - More */}
       <div className="flex-1 px-8">
         <h3 className="font-semibold text-lg text-gray-900 mb-4">More</h3>
         <ul className="space-y-3">
